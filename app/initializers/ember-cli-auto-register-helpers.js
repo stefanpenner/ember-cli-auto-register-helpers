@@ -13,7 +13,7 @@ export var initialize = function() {
 };
 
 export default {
-  name: 'helpers',
+  name: 'ember-cli-auto-register-helpers',
 
   initialize: initialize
 };

@@ -1,8 +1,15 @@
-# Ember-cli-auto-register-helpers
+# ember-cli-auto-register-helpers
 
-This README outlines the details of collaborating on this Ember addon.
+Auto-register helpers in `app/helpers/*`, this aligns helpers with everything else in ember-cli
 
-## Installation
+## Usage
+
+```
+npm install --save-dev ember-cli-auto-register-helpers
+ember g helper capitalize
+```
+
+## Development
 
 * `git clone` this repository
 * `npm install`

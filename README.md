@@ -5,7 +5,7 @@ Auto-register helpers in `app/helpers/*`, this aligns helpers with everything el
 ## Usage
 
 ```
-npm install --save-dev ember-cli-auto-register-helpers
+ember install ember-cli-auto-register-helpers
 ember g helper capitalize
 ```
 

@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import config from '../config/environment';
 
-export var initialize = function() {
+export function initialize() {
   var matcher = new RegExp(config.modulePrefix + '/helpers/.*');
 
   Ember.A(Ember.keys(window.require.entries)).filter(function(path) {
@@ -14,6 +14,5 @@ export var initialize = function() {
 
 export default {
   name: 'ember-cli-auto-register-helpers',
-
   initialize: initialize
 };

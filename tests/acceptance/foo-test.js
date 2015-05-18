@@ -1,23 +1,24 @@
 import Ember from 'ember';
 import startApp from '../helpers/start-app';
+import { test } from 'ember-qunit';
+import { module } from 'qunit';
 
 var App;
 
 module('Acceptance: helpers work', {
-  setup: function() {
+  setup() {
     App = startApp();
   },
-  teardown: function() {
+  teardown() {
     Ember.run(App, 'destroy');
   }
 });
 
-test('visiting /', function() {
+test('visiting /', function(assert) {
   visit('/');
 
   andThen(function() {
-    equal(currentPath(), 'index');
-
-    equal(Ember.$('#capitalized').text(), 'FOO', 'helper was autoloaded');
+    assert.equal(currentPath(), 'index');
+    assert.equal(Ember.$('#capitalized').text(), 'FOO', 'helper was autoloaded');
   });
 });

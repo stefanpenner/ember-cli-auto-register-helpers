@@ -1,4 +1,4 @@
-# ember-cli-auto-register-helpers
+# ember-cli-auto-register-helpers [![Build Status](https://travis-ci.org/stefanpenner/ember-cli-auto-register-helpers.svg)](https://travis-ci.org/stefanpenner/ember-cli-auto-register-helpers)
 
 Auto-register helpers in `app/helpers/*`, this aligns helpers with everything else in ember-cli
 

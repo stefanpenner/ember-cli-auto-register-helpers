@@ -11,7 +11,10 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stefanpenner/ember-cli-auto-register-helpers.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },

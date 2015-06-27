@@ -12,7 +12,7 @@ module.exports = {
   },
 
   treeFor: function() {
-    if (this._checkerForEmber.lt('2.0.0-beta.1')) {
+    if (this._checkerForEmber.lt('1.13.0')) {
       return this._super.treeFor.apply(this, arguments);
     } else {
       console.warn('ember-auto-register-helpers is not required for Ember 2.0.0 and later please remove from your `package.json`.');
